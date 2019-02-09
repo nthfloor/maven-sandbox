@@ -14,4 +14,8 @@ public class GreeterTest {
 		assertThat(greeter.sayHello(), containsString("Hello"));
 	}
 
+    @Test
+	public void greeterTellsTheTime() {
+		assertThat(greeter.tellTheTime(), containsString("current local time"));
+	}
 }
