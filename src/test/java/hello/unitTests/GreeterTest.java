@@ -1,8 +1,9 @@
-package hello;
+package hello.unitTests;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 
+import hello.Greeter;
 import org.junit.Test;
 
 public class GreeterTest {
