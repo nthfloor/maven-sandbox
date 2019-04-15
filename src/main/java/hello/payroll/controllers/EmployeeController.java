@@ -1,6 +1,10 @@
-package hello.payroll;
+package hello.payroll.controllers;
 
 import java.util.List;
+
+import hello.payroll.entities.Employee;
+import hello.payroll.repositories.EmployeeRepository;
+import hello.payroll.helpers.EmployeeNotFoundException;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +19,7 @@ class EmployeeController {
 
 	private final EmployeeRepository repository;
 
-	EmployeeController(EmployeeRepository repository) {
+	public EmployeeController(EmployeeRepository repository) {
 		this.repository = repository;
 	}
 

@@ -1,6 +1,8 @@
 package hello.payroll;
 
 import lombok.extern.slf4j.Slf4j;
+import hello.payroll.repositories.EmployeeRepository;
+import hello.payroll.entities.Employee;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
